@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Second JS Assignment">
+    <meta name="author" content="Lidija Vukicevic">
+    <title>Program for performing basic arithmetic operations</title>
+
+</head>
+
+<body>
+    <script>
+
+        function addition(a, c) {
+            return a + c;
+        }
+        function subtraction(a, c) {
+            return a - c;
+        }
+        function multiplication(a, c) {
+            return a * c;
+        }
+        function division(a, c) {
+            return a / c;
+        }
+
+        var a = parseInt(prompt("Please enter any number:"));
+        var b = prompt("Please enter +, -, * or / :");
+        var c = parseInt(prompt("Please enter any number:"));
+
+        if (b == "+") {
+            var result = addition(a, c);
+        } else if (b == "-") {
+            var result = subtraction(a, c);
+        } else if (b == "*") {
+            var result = multiplication(a, c);
+        } else if (b == "/") {
+            var result = division(a, c);
+        }
+
+        document.write("The result is: " + result);
+
+    </script>
+</body>
+
+</html>
